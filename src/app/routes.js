@@ -1,5 +1,5 @@
 import {createRouter} from '@corpuscule/router';
-import RecordLevelForm from '../record-level-form';
+import RecordLevelForm from '../record-level-validation';
 import SimpleForm from '../simple-form';
 import {html} from './config';
 import Default from './Default';
