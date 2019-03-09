@@ -1,0 +1,18 @@
+:host {
+  --link__background: white;
+  --link__color: #333;
+
+  --link__background--active: #666;
+  --link__color--active: white;
+
+  display: flex;
+}
+
+.links {
+  width: 30%;
+}
+
+.forms {
+  flex-grow: 1;
+}
+
