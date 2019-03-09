@@ -29,7 +29,7 @@ export default class Links extends HTMLElement {
           <a is="corpuscule-link" href="${urls.simple}">Simple Form</a>
         </li>
         <li class="${this.getActiveClass(urls.recordValidate)}">
-          <a is="corpuscule-link" href="${urls.recordValidate}">Record-Validate Form</a>
+          <a is="corpuscule-link" href="${urls.recordValidate}">Record-Level Validation Form</a>
         </li>
       </ul>
     `;
