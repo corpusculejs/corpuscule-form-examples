@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  line-height: 2em;
+  margin: 5px;
+}
+
+slot {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.error {
+  color: var(--error-color);
+  margin-left: 10px;
+  font-weight: bold;
+  line-height: 32px;
+}
