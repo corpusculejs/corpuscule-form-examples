@@ -1,9 +1,9 @@
-import {internal, render} from "@corpuscule/element";
-import {api, outlet} from "@corpuscule/router";
-import styles from "@corpuscule/styles";
-import {element, html} from "./config";
+import {internal, render} from '@corpuscule/element';
+import {api, outlet} from '@corpuscule/router';
+import styles from '@corpuscule/styles';
+import {element, html} from './config';
 import linksStyles from './links.css';
-import {routes} from "./routes";
+import {routes} from './routes';
 
 @element('ex-links')
 @outlet(routes)
@@ -11,7 +11,7 @@ import {routes} from "./routes";
 export default class Links extends HTMLElement {
   static urls = {
     simple: '/simple-form',
-    recordValidate: '/record-validate-form'
+    recordValidate: '/record-validate-form',
   };
 
   @api @internal layout;

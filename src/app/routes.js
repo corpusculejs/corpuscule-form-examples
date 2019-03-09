@@ -1,7 +1,8 @@
-import {createRouter} from "@corpuscule/router";
-import SimpleForm from "../simple-form";
-import {html} from "./config";
-import Default from "./Default";
+import {createRouter} from '@corpuscule/router';
+import RecordLevelForm from '../record-level-form';
+import SimpleForm from '../simple-form';
+import {html} from './config';
+import Default from './Default';
 
 export const routes = [
   {
@@ -13,9 +14,9 @@ export const routes = [
     path: '/simple-form',
   },
   {
-    action: () => html``,
+    action: () => html`<${RecordLevelForm}></${RecordLevelForm}>`,
     path: '/record-validate-form',
-  }
+  },
 ];
 
 export const router = createRouter(routes);

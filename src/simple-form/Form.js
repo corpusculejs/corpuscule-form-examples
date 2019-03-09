@@ -1,16 +1,16 @@
-import {internal, internalChangedCallback, render} from "@corpuscule/element";
-import {api, form, option} from "@corpuscule/form";
-import {element, html} from "../app/config";
-import Field from "./Field";
+import {internal, internalChangedCallback, render} from '@corpuscule/element';
+import {api, form, option} from '@corpuscule/form';
+import {element, html} from '../app/config';
+import Field from './Field';
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 @form()
-@element("ex1-form", {extends: "form"})
+@element('ex1-form', {extends: 'form'})
 export default class Form extends HTMLFormElement {
   @api formApi;
   @api @internal state;
-  @option initialValues = {stooge: "larry", employed: false};
+  @option initialValues = {stooge: 'larry', employed: false};
 
   @option
   async onSubmit(values) {
@@ -19,24 +19,22 @@ export default class Form extends HTMLFormElement {
   }
 
   connectedCallback() {
-    this[internalChangedCallback]("state", null, this.state);
+    this[internalChangedCallback]('state', null, this.state);
   }
 
   [internalChangedCallback](propName, oldValue, newValue) {
-    if (propName === "state") {
-      this.dispatchEvent(
-        new CustomEvent("form-state-changed", {detail: newValue})
-      );
+    if (propName === 'state') {
+      this.dispatchEvent(new CustomEvent('form-state-changed', {detail: newValue}));
     }
   }
 
   [render]() {
     return html`
-      <${Field} name="first-name">
+      <${Field} name="firstName">
         <label>First Name</label>
         <input type="text" placeholder="First Name">
       </${Field}>
-      <${Field} name="last-name">
+      <${Field} name="lastName">
         <label>Last Name</label>
         <input type="text" placeholder="Last Name">
       </${Field}>

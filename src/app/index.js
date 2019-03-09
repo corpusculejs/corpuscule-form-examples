@@ -1,11 +1,11 @@
-import {render} from "@corpuscule/element";
-import {api, provider as routerProvider} from "@corpuscule/router";
-import styles from "@corpuscule/styles";
+import {render} from '@corpuscule/element';
+import {api, provider as routerProvider} from '@corpuscule/router';
+import styles from '@corpuscule/styles';
 import appStyles from './app.css';
-import {element, html} from "./config";
-import Forms from "./Forms";
-import Links from "./Links";
-import {router} from "./routes";
+import {element, html} from './config';
+import Forms from './Forms';
+import Links from './Links';
+import {router} from './routes';
 
 @routerProvider
 @styles(appStyles)
