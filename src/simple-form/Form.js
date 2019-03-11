@@ -30,19 +30,19 @@ export default class Form extends HTMLFormElement {
 
   [render]() {
     return html`
-      <${Field} name="firstName">
+      <${Field} class="field" name="firstName">
         <label>First Name</label>
         <input type="text" placeholder="First Name">
       </${Field}>
-      <${Field} name="lastName">
+      <${Field} class="field" name="lastName">
         <label>Last Name</label>
         <input type="text" placeholder="Last Name">
       </${Field}>
-      <${Field} name="employed">
+      <${Field} class="field" name="employed">
         <label>Employed</label>
         <input type="checkbox">
       </${Field}>
-      <${Field} name="favoriteColor">
+      <${Field} class="field" name="favoriteColor">
         <label>Favorite Color</label>
         <select>
           <option></option>
@@ -51,7 +51,7 @@ export default class Form extends HTMLFormElement {
           <option value="#0000ff">💙 Blue</option>
         </select>
       </${Field}>
-      <${Field} name="toppings">
+      <${Field} class="field" name="toppings">
         <label>Toppings</label>
         <select multiple>
           <option value="chicken">🐓 Chicken</option>
@@ -62,7 +62,7 @@ export default class Form extends HTMLFormElement {
           <option value="pineapple">🍍 Pineapple</option>
         </select>
       </${Field}>
-      <${Field} name="sauces">
+      <${Field} class="field" name="sauces">
         <label>Sauces</label>
         <section class="list">
           <label>
@@ -83,7 +83,7 @@ export default class Form extends HTMLFormElement {
           </label>
         </section>
       </${Field}>
-      <${Field} name="stooge">
+      <${Field} class="field" name="stooge">
         <label>Best Stooge</label>
         <section class="list">
           <label>

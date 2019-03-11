@@ -49,15 +49,15 @@ export default class Form extends HTMLFormElement {
 
   [render]() {
     return html`
-      <${Field} name="firstName">
+      <${Field} class="field" name="firstName">
         <label>First Name</label>
         <input type="text" placeholder="First Name">
       </${Field}>
-      <${Field} name="lastName">
+      <${Field} class="field" name="lastName">
         <label>Last Name</label>
         <input type="text" placeholder="Last Name">
       </${Field}>
-      <${Field} name="age">
+      <${Field} class="field" name="age">
         <label>Age</label>
         <input type="text" placeholder="Age">
       </${Field}>

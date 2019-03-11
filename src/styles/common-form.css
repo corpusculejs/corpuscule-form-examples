@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 99%;
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
 }
 
@@ -91,23 +91,23 @@ button[type='submit'] {
   padding: 20px;
 }
 
-ex1-field {
+.field {
   display: flex;
   flex-flow: row nowrap;
   line-height: 2em;
   margin: 5px;
 }
 
-ex1-field > label {
+.field > label {
   color: #333;
   width: 110px;
   font-size: 1em;
   line-height: 32px;
 }
 
-ex1-field input,
-ex1-field select,
-ex1-field textarea {
+.field input,
+.field select,
+.field textarea {
   flex: 1;
   padding: 3px 5px;
   font-size: 1em;
@@ -116,6 +116,6 @@ ex1-field textarea {
   border-radius: 3px;
 }
 
-x-field input[type='checkbox'] {
+.field input[type='checkbox'] {
   margin-top: 7px;
 }

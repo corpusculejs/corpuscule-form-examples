@@ -1,11 +1,11 @@
 import {internal, render} from '@corpuscule/element';
 import styles from '@corpuscule/styles';
 import {element, html} from '../app/config';
-import recordLevelFormStyles from './record-level-validation.css';
+import commonFormStyles from '../styles/common-form.css';
 import Form from './Form';
 
 @element('ex2-record-level-validation-form')
-@styles(recordLevelFormStyles)
+@styles(commonFormStyles)
 export default class RecordLevelForm extends HTMLElement {
   @internal formState = {};
 
