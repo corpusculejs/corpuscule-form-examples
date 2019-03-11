@@ -8,14 +8,17 @@ export const routes = [
   {
     action: () => html`<${Default}></${Default}>`,
     path: '',
+    link: 'Home',
   },
   {
     action: () => html`<${SimpleForm}></${SimpleForm}>`,
     path: '/simple-form',
+    link: 'Simple Form',
   },
   {
     action: () => html`<${RecordLevelForm}></${RecordLevelForm}>`,
-    path: '/record-validate-form',
+    path: '/record-level-validation',
+    link: 'Record-Level Validation Form',
   },
 ];
 
