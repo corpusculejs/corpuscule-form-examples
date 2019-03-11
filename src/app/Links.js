@@ -16,7 +16,7 @@ export default class Links extends HTMLElement {
     return html`
       <ul>
         ${repeat(routes, route => route.path, ({link, path}) => html`
-          <li class="${location.pathname === path}">
+          <li class="${location.pathname === path ? 'active' : ''}">
             <a is="${Link}" href="${path}">${link}</a>
           </li>
         `)}

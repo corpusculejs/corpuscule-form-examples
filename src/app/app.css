@@ -1,6 +1,8 @@
 :host {
+  --color__grey: #333;
+
   --link__background: white;
-  --link__color: #333;
+  --link__color: var(--color__grey);
 
   --link__background--active: #666;
   --link__color--active: white;
@@ -14,4 +16,14 @@
 
 .forms {
   flex-grow: 1;
+}
+
+.default {
+  display: block;
+  margin-left: 50px;
+  padding: 20px;
+  border: 2px solid var(--color__grey);
+  height: 40vh;
+  text-align: center;
+  line-height: 40vh;
 }

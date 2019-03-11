@@ -4,7 +4,7 @@ import {element} from './config';
 import {routes} from './routes';
 
 @outlet(routes)
-@element('ex-forms')
+@element('ex-forms', {lightDOM: true})
 export default class Forms extends HTMLElement {
   @api @internal layout;
 

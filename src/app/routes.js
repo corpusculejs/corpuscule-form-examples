@@ -7,8 +7,8 @@ import Default from './Default';
 
 export const routes = [
   {
-    action: () => html`<${Default}></${Default}>`,
-    path: '',
+    action: () => html`<${Default} class="default"></${Default}>`,
+    path: '/',
     link: 'Home',
   },
   {
